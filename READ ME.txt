@@ -1,0 +1,69 @@
+# Personal Expense Tracker by Imran Mujkanović and Sara Avdić
+
+A terminal-based Python application for tracking personal expenses, setting budgets, and generating summaries and reports.
+
+---
+
+## Folder Structure
+
+```
+almeria project/
+│
+├── expense_tracker.py      # Main Python program (run this file)
+├── expenses.txt            # Data file for expense history (auto-created)
+├── expenses.txt.meta       # Metadata file for budgets and totals (auto-created)
+├── expense_report.txt      # (Optional) Exported report file
+└── README.md               # This file
+```
+
+---
+
+## File Descriptions
+
+- **expense_tracker.py**  
+  The main script. Contains all program logic, data structures, and user interface.  
+  Run this file to start the expense tracker.
+
+- **expenses.txt**  
+  Stores all expense records in CSV format.  
+  Created and updated automatically by the program.
+
+- **expenses.txt.meta**  
+  Stores additional data (budgets, category totals) in JSON format.  
+  Managed automatically by the program.
+
+- **expense_report.txt**  
+  (Optional) Generated when you use the "Export Report" feature.  
+  Contains a formatted summary of all expenses.
+
+- **README.md**  
+  This documentation file.
+
+---
+
+## How to Use
+
+1. **Install requirements:**  
+   Make sure you have Python 3 and the `colorama` package installed:
+   ```
+   pip install colorama
+   ```
+
+2. **Run the program:**  
+   ```
+   python expense_tracker.py
+   ```
+
+3. **Follow the on-screen menu** to add expenses, set budgets, view summaries, and more.
+
+---
+
+## Notes
+
+- All data is saved automatically after each operation.
+- If you delete `expenses.txt` or `expenses.txt.meta`, your data will be lost.
+- The program is modular and easy to extend with new features.
+
+---
+
+Enjoy tracking your expenses!
